@@ -106,7 +106,6 @@ def organize_files_by_date(src_folder, dest_folder_base):
         
         if kst_time_str:
             print(f'KST time: {creation_date}')
-            time.sleep(0.1)
             if '-' in kst_time_str:
                 year, month, _ = kst_time_str.split('-')
             elif '-' not in kst_time_str:
@@ -137,7 +136,7 @@ def organize_files_by_date(src_folder, dest_folder_base):
                 
 
 # 사용 예시
-src_folder = r'C:\Users\USER\Desktop\!! PHOTO !!\add\Cache'
-dest_folder_base = r'C:\Users\USER\Desktop\!! PHOTO !!\add\Auto2'
+src_folder = r'C:\Users\USER\Desktop\Photos2'
+dest_folder_base = r'C:\Users\USER\Desktop\listed Photos'
 
 organize_files_by_date(src_folder, dest_folder_base)

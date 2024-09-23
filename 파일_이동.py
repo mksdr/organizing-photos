@@ -38,15 +38,15 @@ def move_files_with_timestamp(src_folder, dst_folder):
                 base, ext = os.path.splitext(filename)
                 dst_file = os.path.join(dst_folder, f"{base}__{timestamp()}{ext}")
 
-            shutil.move(src_file, dst_file)
-            # shutil.copy(src_file, dst_file)
+            # shutil.move(src_file, dst_file)
+            shutil.copy(src_file, dst_file)
             print(f"Moved '{src_file}' to '{dst_file}'")
             time.sleep(0.01)
 
 # 원본 폴더 경로
-source_folder = r'C:\Users\USER\Desktop\!! PHOTO !!\add\Auto2'
+source_folder = r'C:\Users\USER\Desktop\listed Photos'
 # 대상 폴더의 기본 경로
-base_target_folder = r'F:\.NAVER MYBOX'
+base_target_folder = r'P:\MYBOX'
 subfolder_pairs = find_subfolders(source_folder)
 print(subfolder_pairs)
 
