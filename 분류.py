@@ -136,7 +136,7 @@ def organize_files_by_date(src_folder, dest_folder_base):
                 
 
 # 사용 예시
-src_folder = r'C:\Users\USER\Desktop\Photos2'
-dest_folder_base = r'C:\Users\USER\Desktop\listed Photos'
+src_folder = r'F:\GoPro'
+dest_folder_base = r'C:\Users\USER\Desktop\Photos'
 
 organize_files_by_date(src_folder, dest_folder_base)

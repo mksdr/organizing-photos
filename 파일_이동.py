@@ -46,7 +46,7 @@ def move_files_with_timestamp(src_folder, dst_folder):
 # 원본 폴더 경로
 source_folder = r'C:\Users\USER\Desktop\listed Photos'
 # 대상 폴더의 기본 경로
-base_target_folder = r'P:\MYBOX'
+base_target_folder = r'Q:\MYBOX'
 subfolder_pairs = find_subfolders(source_folder)
 print(subfolder_pairs)
 
