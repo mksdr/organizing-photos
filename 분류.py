@@ -1,5 +1,4 @@
 import os
-import time
 import shutil
 from pymediainfo import MediaInfo
 from datetime import timedelta
@@ -132,11 +131,11 @@ def organize_files_by_date(src_folder, dest_folder_base):
 
                 # shutil.copy(file_path, dest_file_path)
                 shutil.move(file_path, dest_file_path)
-                print(f'Copied {file_path} to {dest_file_path}')
+                print(f'Moved {file_path} to {dest_file_path}')
                 
 
 # 사용 예시
-src_folder = r'F:\GoPro'
-dest_folder_base = r'C:\Users\USER\Desktop\Photos'
+src_folder = 'Folder1'
+dest_folder_base = 'Folder2'
 
 organize_files_by_date(src_folder, dest_folder_base)
